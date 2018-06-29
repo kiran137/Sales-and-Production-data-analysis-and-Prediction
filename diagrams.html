@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<style>
+  a:link, a:visited {
+    background-color: grey;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    
+}
+
+
+a:hover, a:active {
+    background-color:gray;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+        background-image: url("1.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        padding-top: 54px;
+      }
+</style>
+<script type = "text/javascript">
+  // from dropdownList.html
+  function changeColor(){
+  var selColor = document.getElementById("selColor");
+  var color = selColor.value;
+  var img = document.getElementById("image");
+  img.src = color;
+  return false;
+ 
+}
+   // end function
+ </script>
+</head>
+<body >
+<p style="text-align: right"><a href="index.html" >Prediction of Future Rate</a> </p>
+    <form action = "">
+        <h1 style="text-align: center">Steel Plant Products Analysis Of Previous Year</h1>
+        <fieldset>
+        <select id = "selColor" >
+         <option value = "">select plot</option>
+         <option value = "pigironvsday.png">PigIron vs day</option>
+         <option value = "pigironVsMonth.png">PigIron vs Month</option>
+         <option value = "pigvsweek.png">PigIron vs WEEK Days</option>
+         <option value = "steelvsday.png">Steel vs Day</option>
+         <option value = "steelVsMonth.png">Steel vs Month</option>
+         <option value = "steelvsweek.png">Steel vs WeekDay</option>
+         <option value = "byvsday.png">Byproduct vs Day</option>
+         <option value = "byproductVsMonth.png">Byproduct vs Month</option>
+
+         <option value = "byvsweek.png">Byproduct vs WeekDaay</option>
+
+        </select>
+        <input type = "button"
+          value = "Select Plot"
+          onclick = "changeColor()" />
+        </fieldset>
+       </form>
+       <img id="image" src="" class="center"/>
+
+
+
+</body>

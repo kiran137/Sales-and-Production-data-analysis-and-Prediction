@@ -1,0 +1,25 @@
+{
+    "title": "Steel Plant Data Process",
+    "name": "steel-plant-data-process",
+    "version": "4.1.1",
+    "description": "A basic HTML starter template for Steel Plant data processing using bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://github.com/hari-007",
+    "license": "MIT",
+    "author": "Hari",
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "jquery": "3.3.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.3",
+        "gulp": "^3.9.1"
+    }
+}
